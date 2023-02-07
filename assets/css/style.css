@@ -35,18 +35,17 @@ main {
 }
 
 .row-1 {
-    padding: 40px 32px 0 32px;
-    flex-grow: 0.1;
+    padding: 40px;
     background-color: #0c203c;
 }
 
 .row-2 {
-    flex-grow: 1.7;
+    flex-grow: 1;
     overflow: auto;
 }
 
 .row-3 {
-    flex-grow: 1.2;
+    flex-grow: 1;
 }
 
 .row-1 .brand {
@@ -222,6 +221,7 @@ main {
         ),
         #d9d9d9;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .row-2 .banner .main-img {
@@ -304,6 +304,10 @@ main {
     color: #fafafa;
 }
 
+.row-2 .card {
+    cursor: pointer;
+}
+
 .row-2 .card .img-song {
     width: 160px;
     height: 160px;
@@ -360,4 +364,91 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.row-2 .Sneak-Peak .items-big {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-2 .Sneak-Peak .card-big {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 47%;
+    padding: 0 16px;
+    height: 370px;
+    background-position: top;
+    background-size: cover;
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.row-2 .Sneak-Peak .card-big-1 {
+    background-image: linear-gradient(
+            180deg,
+            rgba(59, 58, 58, 0.444) 10%,
+            rgba(0, 0, 0, 0.592) 100%
+        ),
+        url(/assets/img/blueming.jpg);
+}
+
+.row-2 .Sneak-Peak .card-big-2 {
+    background-image: linear-gradient(
+            180deg,
+            rgba(59, 58, 58, 0.444) 10%,
+            rgba(0, 0, 0, 0.592) 100%
+        ),
+        url(/assets/img/strawberrymoon.jpg);
+}
+
+.row-2 .Sneak-Peak .infor {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-2 .Sneak-Peak .infor .status {
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100px;
+    padding: 6px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #fafafa;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.row-2 .Sneak-Peak .infor .song-name {
+    font-family: "Sen", sans-serif;
+    font-weight: 600;
+    font-size: 2.7rem;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.row-2 .Sneak-Peak .infor .singer-name {
+    font-family: "Sen", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.row-2 .Sneak-Peak .infor .date {
+    font-family: "Sen", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.row-2 .Sneak-Peak .img-song img {
+    width: 114px;
+    height: 114px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-left: 20px;
 }
