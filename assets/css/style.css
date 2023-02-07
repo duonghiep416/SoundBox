@@ -45,7 +45,7 @@ main {
 }
 
 .row-3 {
-    flex-grow: 1;
+    flex-grow: 0.9;
 }
 
 .row-1 .brand {
@@ -295,9 +295,8 @@ main {
     margin-bottom: 24px;
 }
 
-.row-2 .title-name {
+.title-name {
     font-family: "Sen", sans-serif;
-    font-style: normal;
     font-weight: 800;
     font-size: 3rem;
     line-height: 1.4;
@@ -451,4 +450,46 @@ main {
     object-fit: cover;
     border-radius: 8px;
     margin-left: 20px;
+}
+
+/* ==================== Row 3 ============================ */
+.row-3 {
+    padding: 45px 32px 0 0;
+}
+.row-3 header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.row-3 header .avatar {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.row-3 header .name-email {
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+}
+
+.row-3 header .name {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.row-3 header .email {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.row-3 .title-name {
+    margin-top: 57px;
+    text-align: center;
 }
