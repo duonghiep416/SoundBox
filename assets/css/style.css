@@ -1,5 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/clash-display");
-
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
 * {
     box-sizing: border-box;
 }
@@ -22,6 +21,7 @@ body {
         rgba(4, 12, 24, 0.9) 52.42%,
         #064bb5 134.35%
     );
+    /* background-repeat: no-repeat; */
     height: 100vh;
 }
 
@@ -41,12 +41,12 @@ main {
 }
 
 .row-2 {
-    flex-grow: 2.2;
+    flex-grow: 1.7;
+    overflow: auto;
 }
 
 .row-3 {
-    flex-grow: 0.7;
-    background-color: #b6ff52;
+    flex-grow: 1.2;
 }
 
 .row-1 .brand {
@@ -63,10 +63,10 @@ main {
 }
 
 .row-1 .brand .brand-name {
-    font-family: "Clash Display", sans-serif;
+    font-family: "Sen", sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     line-height: 1.4;
     color: #fffeff;
 }
@@ -114,4 +114,250 @@ main {
     width: 30px;
     height: 30px;
     margin-right: 20px;
+}
+
+/* Row 2 */
+.row-2 {
+    overflow: overlay;
+    height: 100vh;
+    padding: 45px 30px;
+}
+
+.row-2::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+.row-2::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    /* background-color: rgba(22, 24, 35, 0.2); */
+}
+
+.row-2::-webkit-scrollbar-track {
+    border-radius: 0;
+    /* background-color: rgba(0, 0, 0, 0); */
+}
+
+.row-2 input {
+    width: 100%;
+    height: 44px;
+    border-radius: 8px;
+    padding: 0 24px;
+    border: none;
+}
+
+.row-2 input::placeholder {
+    font-weight: 700;
+    font-size: 1.4;
+    color: rgba(34, 34, 34, 0.5);
+}
+
+.row-2 .search {
+    width: 70%;
+    position: relative;
+}
+
+.row-2 .search img {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
+
+.row-2 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-2 header .active-icon {
+    display: flex;
+}
+
+.row-2 header .active-icon .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #b4b3b37f;
+    cursor: pointer;
+}
+
+.row-2 header .active-icon .icon:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(16%) saturate(7158%)
+        hue-rotate(25deg) brightness(94%) contrast(114%);
+}
+
+.row-2 .hello {
+    margin-top: 57px;
+    display: flex;
+    align-items: center;
+    font-family: "Sen", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.4;
+    color: #fafafa;
+}
+
+.row-2 .hello img {
+    filter: brightness(0) saturate(100%) invert(16%) sepia(90%) saturate(6559%)
+        hue-rotate(6deg) brightness(93%) contrast(114%);
+    margin-left: 10px;
+}
+
+.row-2 .banner {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(
+            180deg,
+            #a4e0ff 0%,
+            rgba(32, 101, 136, 0.87) 100%
+        ),
+        #d9d9d9;
+    border-radius: 8px;
+}
+
+.row-2 .banner .main-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    bottom: 0;
+}
+
+.row-2 .banner .kind-of-music {
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.row-2 .banner .singer {
+    font-family: "Sen", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.row-2 .banner .singer span {
+    color: var(--primary-color);
+}
+
+.row-2 .banner .statistics .plays,
+.row-2 .banner .statistics .heart,
+.row-2 .banner .statistics .share,
+.row-2 .banner .statistics {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.row-2 .banner .statistics span {
+    margin-left: 6px;
+    margin-right: 16px;
+}
+
+.row-2 .next-slide {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.row-2 .next-slide div {
+    margin-right: 12px;
+    width: 60px;
+    height: 8px;
+    background-color: #366fc4;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.row-2 .next-slide div:hover {
+    background-color: var(--primary-color);
+}
+
+.row-2 .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.row-2 .title-name {
+    font-family: "Sen", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.4;
+    color: #fafafa;
+}
+
+.row-2 .card .img-song {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.row-2 .card .infor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.row-2 .card .name {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-2 .card .song-name {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.row-2 .card .singer-name {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.row-2 .card .infor .heart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.3;
+    line-height: 19px;
+    color: #ffffff;
+}
+
+.row-2 .card .infor .heart-icon {
+    color: #ffffff;
+    margin-right: 4px;
+    width: 13px;
+    height: 13px;
+}
+
+.row-2 .recently-played .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
