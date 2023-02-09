@@ -45,7 +45,7 @@ main {
 }
 
 .row-3 {
-    flex-grow: 0.9;
+    flex-grow: 0.6;
 }
 
 .row-1 .brand {
@@ -303,30 +303,30 @@ main {
     color: #fafafa;
 }
 
-.row-2 .card {
+.card {
     cursor: pointer;
 }
 
-.row-2 .card .img-song {
+.card .img-song {
     width: 160px;
     height: 160px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.row-2 .card .infor {
+.infor {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 160px;
 }
 
-.row-2 .card .name {
+.name {
     display: flex;
     flex-direction: column;
 }
 
-.row-2 .card .song-name {
+.song-name {
     margin-top: 8px;
     margin-bottom: 4px;
     font-weight: 600;
@@ -335,14 +335,14 @@ main {
     color: #ffffff;
 }
 
-.row-2 .card .singer-name {
+.singer-name {
     font-weight: 500;
     font-size: 1.3rem;
     line-height: 1.4;
     color: rgba(255, 255, 255, 0.5);
 }
 
-.row-2 .card .infor .heart {
+.infor .heart {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -352,7 +352,7 @@ main {
     color: #ffffff;
 }
 
-.row-2 .card .infor .heart-icon {
+.infor .heart-icon {
     color: #ffffff;
     margin-right: 4px;
     width: 13px;
@@ -390,7 +390,7 @@ main {
             rgba(59, 58, 58, 0.444) 10%,
             rgba(0, 0, 0, 0.592) 100%
         ),
-        url(/assets/img/blueming.jpg);
+        url(../img/blueming.jpg);
 }
 
 .row-2 .Sneak-Peak .card-big-2 {
@@ -399,15 +399,15 @@ main {
             rgba(59, 58, 58, 0.444) 10%,
             rgba(0, 0, 0, 0.592) 100%
         ),
-        url(/assets/img/strawberrymoon.jpg);
+        url(../img/strawberrymoon.jpg);
 }
 
-.row-2 .Sneak-Peak .infor {
+.row-2 .Sneak-Peak .infor-SneakPeak {
     display: flex;
     flex-direction: column;
 }
 
-.row-2 .Sneak-Peak .infor .status {
+.row-2 .Sneak-Peak .infor-SneakPeak .status {
     margin-bottom: 25px;
     text-align: center;
     width: 100px;
@@ -420,7 +420,7 @@ main {
     border-radius: 5px;
 }
 
-.row-2 .Sneak-Peak .infor .song-name {
+.row-2 .Sneak-Peak .infor-SneakPeak .song-name {
     font-family: "Sen", sans-serif;
     font-weight: 600;
     font-size: 2.7rem;
@@ -428,7 +428,7 @@ main {
     color: #ffffff;
 }
 
-.row-2 .Sneak-Peak .infor .singer-name {
+.row-2 .Sneak-Peak .infor-SneakPeak .singer-name {
     font-family: "Sen", sans-serif;
     font-weight: 500;
     font-size: 1.8rem;
@@ -436,7 +436,7 @@ main {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.row-2 .Sneak-Peak .infor .date {
+.row-2 .Sneak-Peak .infor-SneakPeak .date {
     font-family: "Sen", sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
@@ -475,7 +475,7 @@ main {
     margin: 0 16px;
 }
 
-.row-3 header .name {
+.row-3 header .username {
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 1.4;
@@ -492,4 +492,96 @@ main {
 .row-3 .title-name {
     margin-top: 57px;
     text-align: center;
+}
+
+.row-3 .heading-table {
+    font-family: "Sen", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.row-3 .item-table {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    /* background-color: #fff; */
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.row-3 .item-table:hover span {
+    color: var(--primary-color);
+}
+
+.row-3 .item-table > span {
+    font-family: "Sen", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: #ffffff;
+    margin-right: 14%;
+}
+
+.row-3 .item-table .infor {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.row-3 .item-table .song-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.row-3 .premium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 170px;
+    border-radius: 32px 8px;
+    background-image: url(../img/bgpremium.svg);
+    background-size: cover;
+    margin: 35px auto;
+    cursor: pointer;
+}
+
+.row-3 .premium p {
+    font-family: "Sen", sans-serif;
+
+    width: 228px;
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 1.4;
+    text-align: center;
+    color: #ffffff;
+}
+
+.row-3 .premium button {
+    font-family: "Sen", sans-serif;
+    margin-top: 12px;
+    width: 119px;
+    height: 33px;
+    background: linear-gradient(
+        92.98deg,
+        rgba(255, 255, 255, 0.35) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+    );
+    box-shadow: -4px 8px 56px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.5px);
+    /* Note: backdrop-filter has minimal browser support */
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 140%;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
 }
