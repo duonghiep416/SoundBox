@@ -81,6 +81,12 @@
                             <span>Favorite</span></a
                         >
                     </li>
+                    <li class="item" id="shareBtn">
+                        <a href="#!" class="active"
+                            ><i class="fa-regular fa-share-from-square"></i>
+                            <span>Share</span></a
+                        >
+                    </li>
                 </ul>
                 <span class="category">Support</span>
                 <ul class="nav">
@@ -508,5 +514,103 @@
                 </div>
             </div>
         </main>
+        <div class="social-share-modal hide">
+            <div class="modal">
+                <img src="./assets/img/times.svg" alt="times" id="times" />
+                <h2 class="title">Share this article</h2>
+                <p class="desc">
+                    If you like this article share it with your friends.
+                </p>
+                <div class="social-active">
+                    <div class="active">
+                        <div class="icon twitter">
+                            <img src="./assets/img/twitter.svg" alt="twitter" />
+                        </div>
+                        <span class="social-name" style="color: #1da1f2"
+                            >Twitter</span
+                        >
+                    </div>
+                    <div class="active">
+                        <div class="icon facebook">
+                            <img
+                                src="./assets/img/facebook.svg"
+                                alt="facebook"
+                            />
+                        </div>
+                        <span class="social-name" style="color: #1877f2"
+                            >Facebook</span
+                        >
+                    </div>
+                    <div class="active">
+                        <div class="icon reddit">
+                            <img src="./assets/img/reddit.svg" alt="reddit" />
+                        </div>
+                        <span class="social-name" style="color: #ff4500"
+                            >Reddit</span
+                        >
+                    </div>
+                    <div class="active">
+                        <div class="icon whatsapp">
+                            <img
+                                src="./assets/img/whatsApp.svg"
+                                alt="whatsApp"
+                            />
+                        </div>
+                        <span class="social-name" style="color: #25d366"
+                            >WhatsApp</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="player-control">
+            <div class="left">
+                <div
+                    class="cd-thumb"
+                    style="
+                        background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg');
+                    "
+                ></div>
+                <div class="control-player-infor">
+                    <p class="song">Name</p>
+                    <p class="singer">Singer</p>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="control">
+                    <div class="btn btn-repeat">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                    <div class="btn btn-prev">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fa-solid fa-pause"></i>
+                        <!-- <i class="fa-solid fa-play"></i> -->
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                    <div class="btn btn-random">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                </div>
+                <input
+                    id="progress"
+                    class="progress"
+                    type="range"
+                    value="0"
+                    step="1"
+                    min="0"
+                    max="100"
+                />
+
+                <audio id="audio" src=""></audio>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <script src="./app.js"></script>
     </body>
 </html>
