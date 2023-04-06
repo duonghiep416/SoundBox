@@ -598,6 +598,16 @@ main {
     border-radius: 8px;
 }
 
+.row-3 .song {
+    height: 341px;
+    overflow: scroll;
+}
+
+.row-3 .song::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
 /* Modal */
 .social-share-modal {
     display: flex;
@@ -714,6 +724,7 @@ main {
 .player-control .left {
     align-items: center;
     display: flex;
+    width: 300px;
 }
 
 .cd {
@@ -730,6 +741,10 @@ main {
     background-size: cover;
     margin: 0 20px;
     /* margin: auto; */
+}
+
+.control-player-infor {
+    width: 180px;
 }
 
 .control-player-infor .song {
@@ -797,15 +812,36 @@ main {
 
 .progress::-webkit-slider-thumb {
     -webkit-appearance: none;
-    appearance: none;
     width: 12px;
     height: 6px;
-    background-color: var(--primary-color);
-    cursor: pointer;
+    background: var(--primary-color);
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: 0.3s ease-in-out;
 }
 
 .player-control .right i {
     color: #fff;
     font-size: 25px;
     margin-right: 50px;
+}
+
+.icon-pause {
+    display: none;
+}
+
+.middle.playing .icon-pause {
+    display: inline-block;
+}
+
+.middle.playing .icon-play {
+    display: none;
+}
+
+.btn.active {
+    color: var(--primary-color);
+}
+
+.item-table:active {
+    opacity: 0.8;
 }

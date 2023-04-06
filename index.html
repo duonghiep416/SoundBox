@@ -398,116 +398,7 @@
                     <span class="heading">Monthly Listener</span>
                     <span class="heading">Likes</span>
                 </div>
-                <div class="item-table">
-                    <span>01</span>
-                    <img
-                        src="./assets/img/Meghan_Trainor_-_Made_You_Look.png"
-                        alt=""
-                        class="song-img"
-                    />
-                    <div class="infor">
-                        <div class="name">
-                            <span class="song-name">Made you look</span>
-                            <span class="singer-name">Meghan Trainor</span>
-                        </div>
-                        <div class="heart">
-                            <img
-                                src="./assets/img/favorite.svg"
-                                alt=""
-                                class="heart-icon"
-                            />
-                            <span>900</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-table">
-                    <span>02</span>
-                    <img
-                        src="./assets/img/Celebrity_IU_cover.jpg"
-                        alt=""
-                        class="song-img"
-                    />
-                    <div class="infor">
-                        <div class="name">
-                            <span class="song-name">Celebrity</span>
-                            <span class="singer-name">IU</span>
-                        </div>
-                        <div class="heart">
-                            <img
-                                src="./assets/img/favorite.svg"
-                                alt=""
-                                class="heart-icon"
-                            />
-                            <span>900</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-table">
-                    <span>03</span>
-                    <img
-                        src="./assets/img/IU_-_Lilac.png"
-                        alt=""
-                        class="song-img"
-                    />
-                    <div class="infor">
-                        <div class="name">
-                            <span class="song-name">Lilac</span>
-                            <span class="singer-name">IU</span>
-                        </div>
-                        <div class="heart">
-                            <img
-                                src="./assets/img/favorite.svg"
-                                alt=""
-                                class="heart-icon"
-                            />
-                            <span>900</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-table">
-                    <span>04</span>
-                    <img
-                        src="./assets/img/24kGoldn_-_Mood.png"
-                        alt=""
-                        class="song-img"
-                    />
-                    <div class="infor">
-                        <div class="name">
-                            <span class="song-name">Mood</span>
-                            <span class="singer-name">24kGoldn</span>
-                        </div>
-                        <div class="heart">
-                            <img
-                                src="./assets/img/favorite.svg"
-                                alt=""
-                                class="heart-icon"
-                            />
-                            <span>900</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-table">
-                    <span>03</span>
-                    <img
-                        src="./assets/img/Nayeon.svg"
-                        alt=""
-                        class="song-img"
-                    />
-                    <div class="infor">
-                        <div class="name">
-                            <span class="song-name">Pop!</span>
-                            <span class="singer-name">Nayeon</span>
-                        </div>
-                        <div class="heart">
-                            <img
-                                src="./assets/img/favorite.svg"
-                                alt=""
-                                class="heart-icon"
-                            />
-                            <span>900</span>
-                        </div>
-                    </div>
-                </div>
+                <div class="song"></div>
                 <div class="premium">
                     <p>Get 1 Month Premium for Free</p>
                     <button>1 Month Free</button>
@@ -517,11 +408,9 @@
         <div class="social-share-modal hide">
             <div class="modal">
                 <img src="./assets/img/times.svg" alt="times" id="times" />
-                <h2 class="title">Share this article</h2>
-                <p class="desc">
-                    If you like this article share it with your friends.
-                </p>
-                <div class="social-active">
+                <h2 class="title">Add Music</h2>
+                <!-- <p class="desc">Add Music</p> -->
+                <!-- <div class="social-active hide">
                     <div class="active">
                         <div class="icon twitter">
                             <img src="./assets/img/twitter.svg" alt="twitter" />
@@ -560,7 +449,7 @@
                             >WhatsApp</span
                         >
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="player-control">
@@ -585,8 +474,8 @@
                         <i class="fa-solid fa-backward-step"></i>
                     </div>
                     <div class="btn btn-toggle-play">
-                        <i class="fa-solid fa-pause"></i>
-                        <!-- <i class="fa-solid fa-play"></i> -->
+                        <i class="fa-solid fa-pause icon-pause"></i>
+                        <i class="fa-solid fa-play icon-play"></i>
                     </div>
                     <div class="btn btn-next">
                         <i class="fa-solid fa-forward-step"></i>
@@ -608,7 +497,15 @@
                 <audio id="audio" src=""></audio>
             </div>
             <div class="right">
-                <i class="fa-solid fa-bars"></i>
+                <input
+                    id="volume-change"
+                    type="range"
+                    value="100"
+                    step="1"
+                    min="0"
+                    max="100"
+                />
+                <i class="fa-solid fa-bars playlist"></i>
             </div>
         </div>
         <script src="./app.js"></script>
